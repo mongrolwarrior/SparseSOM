@@ -1,0 +1,18 @@
+# Keep the Docker build context small: exclude build output, git internals,
+# editor state, and anything that doesn't affect the compiled binary.
+build/
+build-*/
+cmake-build-*/
+_deps/
+.git/
+.cache/
+.claude/
+compile_commands.json
+*.o
+*.obj
+*.a
+tests/
+benchmarks/
+*.swp
+*~
+.DS_Store
